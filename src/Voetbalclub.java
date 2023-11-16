@@ -33,6 +33,6 @@ public class Voetbalclub {
     // toString method to display the details of the voetbalclub
     @Override
     public String toString() {
-        return naam + aantalGespeeld() + aantalGewonnen + aantalGelijk + aantalVerloren + aantalPunten();
+        return String.format("%-12s%3d%3d%3d%3d%3d", naam, aantalGespeeld(), aantalGewonnen, aantalGelijk, aantalVerloren, aantalPunten());
     }
 }
